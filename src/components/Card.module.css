@@ -1,0 +1,148 @@
+
+.cardContainer{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    width: 46rem;
+    height: 4.5rem;
+    background: var(--gray-400);
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    transition: background 0.2s ease-in-out;
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.cardContainerChecked{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    width: 46rem;
+    height: 4.5rem;
+    background: var(--gray-400);
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    cursor: text; 
+    transition: background 0.2s ease-in-out;
+    border: 1px solid var(--gray-500);
+}
+
+.cardContainer:hover{
+    background: var(--gray-500);
+}
+
+.cardContainerChecked:hover{
+    background: var(--gray-500);
+}
+
+.text{  
+    width: 100%;
+    max-height: 50px;
+    overflow: hidden;
+    cursor: text; 
+}
+.checkedText{
+    width: 100%;
+    max-height: 50px;
+    
+    overflow: hidden;
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.checkButtonChecked{
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--purple);
+    transition: color 0.2s ease-in-out;
+}
+
+.checkButton{
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--blue);
+    transition: color 0.2s ease-in-out;
+}
+
+.deleteButton{
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--gray-300);
+    transition: color 0.2s ease-in-out;
+    
+}
+
+.cardContainer > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    padding: 2px 2px;
+    border-radius: 4px;
+    transition: background 0.2s ease-in-out;
+}
+
+.cardContainerChecked > span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 22px;
+    width: 22px;
+    padding: 2px 2px;
+    border-radius: 4px;
+    transition: background 0.2s ease-in-out;
+}
+
+.cardContainer > span:hover .deleteButton{
+    color: var(--danger);
+}
+
+.cardContainer > span:hover{
+    background: var(--gray-400);
+}
+
+.cardContainerChecked > span:hover .deleteButton{
+    color: var(--danger);
+}
+
+.cardContainerChecked > span:hover{
+    background: var(--gray-400);
+}
+
+
+.deleteButton:hover{
+    color: var(--danger);
+}
+
+.dragContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: var(--gray-400);
+    border-radius: 8px;
+    color: var(--purple);
+    font-size: 0.875rem;
+    transition: background 0.2s ease-in-out;
+    border: 1px solid var(--gray-400);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    cursor: grab;
+}

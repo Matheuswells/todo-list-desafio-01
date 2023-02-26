@@ -1,0 +1,15 @@
+
+
+.header{
+    background: var(--gray-700);
+    height: 12.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header img{
+    width: 7.975rem;
+}

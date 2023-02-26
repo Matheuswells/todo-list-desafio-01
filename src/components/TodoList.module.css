@@ -1,0 +1,100 @@
+
+.listContainer{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: calc(100% - 12.5rem);
+}
+
+.listContainer header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 736px;
+    color: var(--gray-100);
+    margin-bottom: 1.5rem;
+}
+
+.listContainer header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.listContainer header div p {
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.listContainer header div span {
+    background: var(--gray-400);
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.cardList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 70vh;
+    overflow-y: auto;
+    width: 46rem;
+    /* border-top: 1px solid var(--gray-400);
+    border-radius: 8px; */
+    margin-bottom: 50px;
+    gap: 0.75rem;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.cardList::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.emptyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 46rem;
+    height: 244px;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.emptyContainer strong {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--gray-300);
+}
+
+.emptyContainer p {
+    font-size: 1rem;
+    color: var(--gray-300);
+    margin-top: 0.25rem;
+}
+
+.emptyContainer img{
+    margin-bottom: 1.5rem;
+    width: 56px;
+}
+.blue{
+    color: var(--blue);
+}
+
+.purple{
+    color: var(--purple);
+}
